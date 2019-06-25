@@ -1,0 +1,550 @@
+/*
+Theme Name:yiyao
+Theme URI: https://wordpress.org/themes/twentyseventeen/
+Author: PengYun
+Author URI: https://wordpress.org/
+Description:yiyao for design
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: yiyao
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/*
+禁用BS的响应式布局
+ */
+
+.container{
+    width:1200px !important;
+}
+
+@media only screen  and (max-width:1472px) {
+	.container{
+    width:970px !important;
+}
+	
+	.mr50-can{
+		margin-right:0px !important;
+	}
+	
+}
+
+a,a:focus,a:hover,a:visited {
+    text-decoration: none!important
+}
+
+html{
+　　-webkit-text-size-adjust:none;/* 使用webkit的私有属性，让字体大小不受设备终端的调整，可定义字体大小小于12px */
+}
+
+body{
+    /*overflow:scroll;overflow-x:hidden;*/
+    font-family: "微软雅黑";
+}
+
+
+ul li {
+    list-style: none
+}
+
+
+
+.align-center{
+    text-align: center;
+}
+
+.f-right{
+    float: right;
+}
+
+/*
+margin 设置
+*/
+.mt120{
+    margin-top: 120px;
+}
+
+.mt80{
+    margin-top:80px;
+}
+
+.mt50{
+    margin-top:50px;
+}
+
+.mt40{
+        margin-top:40px;
+}
+
+.mt30{
+    margin-top:30px;
+}
+
+
+.mt20{
+        margin-top:20px;
+}
+
+.mt10{
+        margin-top:10px;
+}
+
+.mt3{
+    margin-top: 3px;
+}
+
+.mg0{
+    margin: 0px !important;
+}
+
+.ml18{
+margin-left:18px;
+}
+
+.pd20{
+    padding: 20px;
+}
+
+
+.pt30{
+    padding-top: 30px;
+}
+
+.pt20{
+    padding-top: 20px;
+}
+
+.pb30{
+    padding-bottom: 30px;
+}
+
+.pb20{
+    padding-bottom: 20px;
+}
+
+.pb10{
+    padding-bottom: 10px;
+}
+
+.pl40{
+	padding-left:40px;
+}
+
+.pl0{
+    padding-left: 0px;
+}
+
+.mt8{
+    margin-top:8px;
+}
+
+.mt5{
+    margin-top: 5px;
+}
+
+.mt0{
+    margin-top: 0px;
+}
+
+.mb0{
+    margin-bottom: 0px;
+}
+
+.mb10{
+    margin-bottom: 10px;
+}
+
+.mb80{
+    margin-bottom: 80px;
+}
+
+.mb100{
+        margin-bottom:100px;
+}
+
+.mb50{
+    margin-bottom:50px;
+}
+
+.mb40{
+	margin-bottom:40px;
+}
+
+.mb30{
+    margin-bottom:30px;
+}
+
+.mb20{
+    margin-bottom:20px;
+}
+
+.mb15{
+    margin-bottom:15px;
+}
+
+.mb10{
+    margin-bottom:10px;
+}
+
+.mb0{
+    margin-bottom: 0px;
+}
+
+
+.ml-40{
+    margin-left: -40px;
+}
+
+.ml30{
+margin-left: 30px;
+}
+
+.ml20{
+margin-left: 20px;
+}
+
+.ml10{
+    margin-left: 10px;
+}
+
+
+.ml0{
+    margin-left: 0px;
+}
+
+.mlmr0{
+   margin-left: 0px;
+   margin-right: 0px;
+}
+
+.ml2mr2{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.mr10{
+    margin-right: 10px;
+}
+
+.ml0mr40{
+	margin-left:0px;
+	margin-right:40px;
+	margin-top:10px;
+	
+}
+
+.mr50-can{
+	margin-right:50px;
+}
+
+/*
+navbar 定制
+ */
+.mynavbar .navbar-nav>li>a {
+    color: white;
+ padding: 14px 50px;
+}
+
+.mynavbar .navbar-nav>li>a:hover{
+    color: black;
+}
+  
+.mynavbar .navbar-nav {
+    font-size: 16px;
+}
+
+.mynavbar .navbar-nav>li {
+  /*  padding-right: 20px*/
+}
+
+/*
+首页样式
+ */
+
+.index-logo{
+    width: 100%;
+    height: 100%;
+}
+
+.index-banner-bg{
+    background-color: rgb(238,238,238);
+    height: 32px;
+    width: 100%;
+}
+
+.index-banner-bg-line{
+    line-height: 32px;
+}
+
+.all-font-color,.all-font-color a{
+        color: #666;
+}
+
+.index-banner-company-title{
+    font-size: 26px;
+    font-weight: 700;
+    color: black;
+}
+
+.index-search-button{
+    background: rgb(37,121,185);
+    border: 1px;
+    padding: 7px 20px;
+    color: white;
+    position: absolute;
+    right: -25px;
+    top: 8px;
+}
+
+.index-banner-navbar{
+     background: rgb(37,121,185);
+     width: 100%;
+     height:50px;
+}
+
+
+.index-carousel-style{
+width: 100%;
+}
+
+.index-carousel-style img{
+width: 100%;
+/*height: 600px !important;*/
+height:auto;
+}
+
+.all-content-kuai{
+    width: 300px;
+    background-color: #f5f5f5;
+    border: #ddd;
+}
+
+
+.bb-none{
+        border-bottom: none !important;
+}
+
+.all-content-kuai li{
+    text-align: center;
+    border-bottom: 1px dotted #ddd;
+    height: 60px;
+    padding-top: 20px;
+    font-size: 16px;
+}
+
+
+.all-content-kuai a{
+    color:black;
+}
+
+.all-content-li-active{
+    background: rgb(37,121,185);
+    color: white;
+}
+
+.all-content-li-active a {
+    color: white;
+}
+
+.all-content-img-style{
+    width: 100%;
+    border:1px solid #ddd;
+    margin: 10px;
+}
+
+
+.index-about-our{
+    width: 100%;
+    background: url(images/about-bg.jpg);
+   height: 350px;
+}
+
+.cancel-bg{
+    background: none;
+}
+
+.index-about-our h1{
+    font-weight: 700;
+}
+
+.index-about-our h1,.index-about-our h2{
+    font-size: 24px;
+}
+
+.index-about-our h1,.index-about-our h2,.index-about-our p{
+    color: white;
+    text-align: center;
+}
+
+.index-about-content{
+    width: 100%;
+	background: rgb(255,255,255);
+    opacity: 0.6;
+
+}
+
+.index-about-our p{
+    color: black;
+	text-align:left;
+}
+
+
+.index-about-row{
+    margin: 0 auto;
+    display: table;
+}
+
+.index-about-content-icon{
+    background: rgb(37,121,185);
+    padding:3px 15px;
+    border-radius: 38px;
+    color: white;
+    margin-right: 10px;
+}
+
+.index-company-news{
+    border: 1px solid #ddd;
+}
+
+.index-company-news-list{
+    list-style-type: disc;
+    border-bottom: 1px dotted #ddd;
+}
+
+.cancel-bt{
+    border-bottom: none;
+}
+
+.cancel-for-black h1,.cancel-for-black h2{
+    color: black;
+
+}
+
+.website-footer{
+    width: 100%;
+     height: 130px;
+    border-top: 2px solid rgb(36,121,188);
+    background: rgb(221,221,221);
+}
+
+.website-footer a,.website-footer p {
+    color: black;
+    text-align: center;
+    font-size: 12px;
+
+}
+
+
+/*
+关于我们
+ */
+.about-bottom{
+   border-bottom: 1px solid #ddd;
+}
+
+.about-top{
+    border-top: 1px solid #ddd;
+}
+
+.about-content{
+    line-height: 26px;
+    font-size: 14px;
+}
+.about-content-p p{
+	font-size:16px;
+	line-height:28px;
+	
+}
+
+/*
+产品面包屑导航
+ */
+
+.product-not-active{
+    display: inline;
+    color:#999;
+}
+
+
+.product-active{
+    color: black;
+    display: inline;
+}
+
+
+
+/*
+商品列表
+ */
+.mg0-left{
+    margin: 10px 10px 10px 0px !important;
+}
+
+/*
+商品详情
+ */
+
+.product-content{
+    background: rgb(37,121,185);
+    padding: 10px 45px;
+    width: 25%;
+    display: inline-block;
+    color: white;
+}
+
+.product-content-other{
+    background: rgb(204,204,204);
+     width: 75%;
+    display: inline-block;
+     padding: 10px 45px;
+}
+
+.product-right-list{
+    display: inline-block;
+    width: 60px;
+}
+
+.lh24{
+    line-height: 24px;
+}
+
+.lh30{
+    line-height: 30px;
+}
+
+
+/*
+分页样式
+*/
+
+
+.fenye{    
+    height: 25px;
+    line-height: 25px;
+    padding: 0px 5px;
+    margin: 50px -35px;
+    text-align: center;
+}
+
+.fenye a{
+    padding:4px 6px 4px 6px;
+    margin:0 2px 0 2px;
+    border:1px solid #dddddd;
+    text-decoration:none;
+    color:black;
+    background: #dddddd;   
+}
+
+.fenye a.current{    
+    background: rgb(37,121,185);    
+    color:#fff;
+}
+
+.fenye a:hover{
+    background: rgb(37,121,185);
+    color:#fff;
+}
